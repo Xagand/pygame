@@ -28,8 +28,7 @@ class Asteroid(CircleShape):
         vec_1 = self.velocity.rotate(random_angle)
         vec_2 = self.velocity.rotate(-random_angle)
         new_radius = self.radius - ASTEROID_MIN_RADIUS
-        print(self.velocity)
-        print(vec_1)
+        
         self.spawn(new_radius, self.position, vec_1 * 1.2)
         self.spawn(new_radius, self.position, vec_2 * 1.2)
         
